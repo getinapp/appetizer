@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/getinapp/appetizer#readme",
   "scripts": {
+    "commit": "git-cz",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint src --max-warnings=0",
@@ -46,6 +47,8 @@
     "@typescript-eslint/parser": "^4.30.0",
     "babel-loader": "^8.2.2",
     "chromatic": "^5.9.2",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -94,5 +97,10 @@
       "yarn lint --fix",
       "yarn test --findRelatedTests --bail"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
