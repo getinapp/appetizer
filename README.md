@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to Appetizer 👋</h1>
-<p>
+<p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/getinapp/appetizer#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
@@ -19,13 +19,17 @@
 
 ### 🏠 [Homepage](https://github.com/getinapp/appetizer#readme)
 
-## Run project
+## How to run project
 
 ```sh
-git clone https://github.com/getinapp/appetizer
+git clone git@github.com:getinapp/appetizer.git
+```
 
+```sh
 yarn install
+```
 
+```sh
 yarn storybook
 ```
 
