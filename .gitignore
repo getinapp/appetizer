@@ -1,0 +1,6 @@
+node_modules
+dist
+.env
+.env.development
+coverage
+build-storybook.log
