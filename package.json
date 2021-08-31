@@ -88,12 +88,6 @@
       "^.+\\.(ts|tsx)?$": "ts-jest"
     }
   },
-  "lint-staged": {
-    "src/**/*": [
-      "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
-    ]
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
