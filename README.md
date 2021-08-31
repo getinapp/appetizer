@@ -15,7 +15,7 @@
   </a>
 </p>
 
-> Design system from Get In
+> Appetizer é uma UI Kit em React que ajuda os desenvolvedores e designers do @getinapp a construir interfaces de usuário consistentes e sem esforço.
 
 ### 🏠 [Homepage](https://github.com/getinapp/appetizer#readme)
 
