@@ -28,7 +28,8 @@
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "test": "jest --collectCoverageFrom=!src/**/*.stories.tsx",
     "test:coverage": "yarn test --coverage --watchAll=false",
-    "test:watch": "yarn test --watchAll"
+    "test:watch": "yarn test --watchAll",
+    "pre-commit-lint": "yarn typecheck && yarn lint-staged"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -85,11 +86,6 @@
     ],
     "transform": {
       "^.+\\.(ts|tsx)?$": "ts-jest"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
