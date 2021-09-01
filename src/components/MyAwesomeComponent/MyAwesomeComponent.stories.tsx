@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import { MyAwesomeComponent } from '.';
 
 export default {
-  title: 'My Awesome Component',
+  title: 'MyAwesomeComponent',
   component: MyAwesomeComponent,
 } as Meta;
 
