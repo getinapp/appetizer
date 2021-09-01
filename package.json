@@ -31,7 +31,8 @@
     "test": "jest --collectCoverageFrom=!src/**/*.stories.tsx",
     "test:coverage": "yarn test --coverage --watchAll=false",
     "test:watch": "yarn test --watchAll",
-    "pre-commit-lint": "yarn typecheck && yarn lint-staged"
+    "pre-commit-lint": "yarn typecheck && yarn lint-staged",
+    "chromatic": "npx chromatic --project-token=082f53484404"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
