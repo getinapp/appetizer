@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Title = styled.h1`
   color: #e8393f;
+  font-size: 1.6rem;
 `;
 
 /**
