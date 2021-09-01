@@ -4,6 +4,6 @@ import { MyAwesomeComponent } from '.';
 
 test('MyAwesomeComponent contains correct text', () => {
   render(<MyAwesomeComponent />);
-  const text = screen.getByText('Hello Appetizer');
+  const text = screen.getByText('Hello Appetizer @getinapp');
   expect(text).toBeInTheDocument();
 });
