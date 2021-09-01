@@ -46,6 +46,7 @@
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
+    "@types/styled-components": "^5.1.13",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
     "auto": "^10.31.0",
@@ -95,5 +96,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "styled-components": "^5.3.1"
   }
 }
