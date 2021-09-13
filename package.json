@@ -32,7 +32,7 @@
     "test:coverage": "yarn test --coverage --watchAll=false",
     "test:watch": "yarn test --watchAll",
     "pre-commit-lint": "yarn typecheck && yarn lint-staged",
-    "chromatic": "npx chromatic --project-token=082f53484404"
+    "make:component": "hygen new component"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -61,6 +61,7 @@
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.2",
+    "hygen": "^6.1.0",
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
