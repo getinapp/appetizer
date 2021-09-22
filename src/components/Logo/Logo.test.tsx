@@ -12,7 +12,7 @@ describe('<Logo />', () => {
 
   it('should render the logo svg with small size', () => {
     renderWithTheme(<Logo size="small" />);
-    expect(screen.getByLabelText(/Get In/i).closest('div')).toHaveStyle({
+    expect(screen.getByLabelText(/Get In/i)).toHaveStyle({
       height: '3.3rem',
       width: '8rem',
     });
@@ -20,7 +20,7 @@ describe('<Logo />', () => {
 
   it('should render the logo svg with default size', () => {
     renderWithTheme(<Logo />);
-    expect(screen.getByLabelText(/Get In/i).closest('div')).toHaveStyle({
+    expect(screen.getByLabelText(/Get In/i)).toHaveStyle({
       height: '4rem',
       width: '10rem',
     });
@@ -28,7 +28,7 @@ describe('<Logo />', () => {
 
   it('should render the logo svg with large size', () => {
     renderWithTheme(<Logo size="large" />);
-    expect(screen.getByLabelText(/Get In/i).closest('div')).toHaveStyle({
+    expect(screen.getByLabelText(/Get In/i)).toHaveStyle({
       height: '6rem',
       width: '15rem',
     });
