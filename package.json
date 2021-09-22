@@ -28,7 +28,7 @@
     "build-storybook": "build-storybook -s ./public",
     "lint": "eslint src --max-warnings=0",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "test": "jest --collectCoverageFrom=!src/**/*.stories.tsx",
+    "test": "jest",
     "test:coverage": "yarn test --coverage --watchAll=false",
     "test:watch": "yarn test --watchAll",
     "pre-commit-lint": "yarn typecheck && yarn lint-staged",
@@ -75,6 +75,18 @@
     "react-dom": "^17.0.2"
   },
   "jest": {
+    "coveragePathIgnorePatterns": [
+      "src/index.tsx",
+      "src/assets/*",
+      "src/store/index.ts",
+      ".*__snapshots__/.*"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts(x)?",
+      "!src/**/*.stories.tsx",
+      "!src/index.ts",
+      "!src/styles/**"
+    ],
     "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
       "<rootDir>/.jest/jest-setup.ts"
