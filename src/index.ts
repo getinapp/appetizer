@@ -1,2 +1,3 @@
 // Components
-export * from './components/MyAwesomeComponent';
+export * from './components/Button';
+export * from './components/Logo';
