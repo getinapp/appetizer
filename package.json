@@ -1,6 +1,6 @@
 {
   "name": "@getinapp/appetizer",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "dist/index.js",
   "license": "MIT",
   "author": "Get In",
@@ -28,7 +28,7 @@
     "build-storybook": "build-storybook -s ./public",
     "lint": "eslint src --max-warnings=0",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "test": "jest --collectCoverageFrom=!src/**/*.stories.tsx",
+    "test": "jest",
     "test:coverage": "yarn test --coverage --watchAll=false",
     "test:watch": "yarn test --watchAll",
     "pre-commit-lint": "yarn typecheck && yarn lint-staged",
@@ -63,6 +63,7 @@
     "husky": "^7.0.2",
     "hygen": "^6.1.0",
     "jest": "^27.1.0",
+    "jest-styled-components": "^7.0.5",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
@@ -75,6 +76,18 @@
     "react-dom": "^17.0.2"
   },
   "jest": {
+    "coveragePathIgnorePatterns": [
+      "src/index.tsx",
+      "src/assets/*",
+      "src/store/index.ts",
+      ".*__snapshots__/.*"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts(x)?",
+      "!src/**/*.stories.tsx",
+      "!src/index.ts",
+      "!src/styles/**"
+    ],
     "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
       "<rootDir>/.jest/jest-setup.ts"
