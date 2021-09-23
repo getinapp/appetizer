@@ -15,13 +15,14 @@ export default {
 export const Default: Story<ParagraphProps> = (args) => <Paragraph {...args} />;
 
 Default.args = {
+  type: 'normal',
   children:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa facere molestiae ut similique blanditiis error tempore itaque dolore. Consequuntur doloremque aspernatur, saepe sit voluptatem mollitia minus facere commodiet?',
 };
 
 export const Lead: Story<ParagraphProps> = (args) => <Paragraph {...args} />;
 
-Default.args = {
+Lead.args = {
   type: 'lead',
   children:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa facere molestiae ut similique blanditiis error tempore itaque dolore. Consequuntur doloremque aspernatur, saepe sit voluptatem mollitia minus facere commodiet?',
