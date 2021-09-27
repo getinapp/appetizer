@@ -96,6 +96,9 @@ export const Container = styled.button<ButtonProps>`
     border-radius: ${theme.border.radius.large};
     text-decoration: none;
     text-align: center;
+    span {
+      font-family: ${theme.font.family};
+    }
 
     ${!!size && wrapperModifiers[size](theme)}
     ${!!variant && wrapperModifiers[variant](theme)}
