@@ -10,7 +10,8 @@
     "url": "git+https://github.com/getinapp/appetizer.git"
   },
   "files": [
-    "dist/**"
+    "dist/**",
+    "public/**"
   ],
   "keywords": [
     "design",
