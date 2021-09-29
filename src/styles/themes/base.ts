@@ -16,9 +16,13 @@ export default {
     normal: 400,
     bold: 600,
     sizes: {
-      small: '1.2rem',
-      medium: '1.5rem',
+      xsmall: '1.2rem',
+      small: '1.4rem',
+      medium: '1.6rem',
       large: '1.8rem',
+      xlarge: '2rem',
+      xxlarge: '2.4rem',
+      huge: '3.2rem',
     },
   },
   spacings: {

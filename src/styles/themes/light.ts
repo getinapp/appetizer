@@ -11,6 +11,7 @@ export default {
     secondaryDark: '',
     white: '#F7F5F5',
     black: '#141414',
+    dark: '#20252A',
     error: '#EB7573',
     disabled: '#B9B8B8',
   },
