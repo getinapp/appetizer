@@ -12,7 +12,6 @@
     "rootDir": "src",
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "declarationDir": "dist/@types",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "strict": true,
