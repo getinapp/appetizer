@@ -15,11 +15,10 @@ export type TitleProps = {
 /**
  * Basic text writing with heading style.
  */
-const Title = ({ children, level = 1, ...props }: TitleProps) => {
+export const Title = ({ children, level = 1, ...props }: TitleProps) => {
   return (
     <S.Title level={level} {...props}>
       {children}
     </S.Title>
   );
 };
-export default Title;

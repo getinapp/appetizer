@@ -5,7 +5,7 @@ export type LogoProps = {
   size?: 'small' | 'normal' | 'large';
 };
 
-const Logo = ({ size = 'normal' }: LogoProps) => (
+export const Logo = ({ size = 'normal' }: LogoProps) => (
   <S.Wrapper size={size}>
     <svg
       width="120"
@@ -42,5 +42,3 @@ const Logo = ({ size = 'normal' }: LogoProps) => (
     </svg>
   </S.Wrapper>
 );
-
-export default Logo;

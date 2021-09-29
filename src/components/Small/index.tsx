@@ -8,6 +8,6 @@ export type SmallProps = {
 /**
  * Basic text writing in small size.
  */
-const Small = ({ children }: SmallProps) => <S.Small>{children}</S.Small>;
-
-export default Small;
+export const Small = ({ children }: SmallProps) => (
+  <S.Small>{children}</S.Small>
+);
