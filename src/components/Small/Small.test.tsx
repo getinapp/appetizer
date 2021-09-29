@@ -2,7 +2,7 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import Small from '.';
+import { Small } from '.';
 
 describe('<Small />', () => {
   it('should render the small with the default size', () => {

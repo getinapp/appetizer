@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
-import Small, { SmallProps } from '.';
+import { Small, SmallProps } from '.';
 
 export default {
   title: 'Typography/Small',
