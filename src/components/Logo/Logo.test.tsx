@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import Logo from '.';
+import { Logo } from '.';
 
 describe('<Logo />', () => {
   it('should render the logo svg', () => {

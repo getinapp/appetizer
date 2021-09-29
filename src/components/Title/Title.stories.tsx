@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
-import Title, { TitleProps } from '.';
+import { Title, TitleProps } from '.';
 
 export default {
   title: 'Typography/Title',
