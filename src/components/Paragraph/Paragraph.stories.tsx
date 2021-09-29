@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
-import Paragraph, { ParagraphProps } from '.';
+import { Paragraph, ParagraphProps } from '.';
 
 export default {
   title: 'Typography/Paragraph',

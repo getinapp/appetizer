@@ -2,7 +2,7 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import Paragraph from '.';
+import { Paragraph } from '.';
 
 describe('<Paragraph />', () => {
   it('should render the paragraph with the default size', () => {
