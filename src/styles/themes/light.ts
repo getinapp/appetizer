@@ -14,5 +14,7 @@ export default {
     dark: '#20252A',
     error: '#EB7573',
     disabled: '#B9B8B8',
+    placeholder: '#908F8F',
+    buttonOutlineBorder: '#676666',
   },
 } as const;
