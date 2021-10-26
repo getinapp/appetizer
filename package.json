@@ -49,6 +49,7 @@
     "@storybook/react": "^6.3.7",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
     "@types/styled-components": "^5.1.13",
@@ -84,7 +85,8 @@
       "src/index.tsx",
       "src/assets/*",
       "src/store/index.ts",
-      ".*__snapshots__/.*"
+      ".*__snapshots__/.*",
+      "dist/*"
     ],
     "collectCoverageFrom": [
       "src/**/*.ts(x)?",
