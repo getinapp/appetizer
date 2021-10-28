@@ -45,7 +45,7 @@ export const withError: Story<InputProps> = (args) => (
 withError.args = {
   title: 'Full name',
   placeholder: 'Testing',
-  error: 'Erro label',
+  error: 'Error text',
 };
 
 export const withHelper: Story<InputProps> = (args) => (
@@ -58,4 +58,14 @@ withHelper.args = {
   title: 'Full name',
   placeholder: 'Testing',
   helper: 'This is a helper text',
+};
+
+export const withoutPlaceholder: Story<InputProps> = (args) => (
+  <div style={{ marginTop: 20 }}>
+    <Input {...args} />
+  </div>
+);
+
+withoutPlaceholder.args = {
+  title: 'Address',
 };
