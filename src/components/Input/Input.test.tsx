@@ -22,6 +22,15 @@ describe('<Input />', () => {
     expect(error).toBeInTheDocument();
   });
 
+  it('should be render input with helper message', () => {
+    renderWithTheme(<Input title="Name" helper="Helper text" />);
+    const text = screen.getByText('Name');
+    const helper = screen.getByText('Helper text');
+
+    expect(text).toBeInTheDocument();
+    expect(helper).toBeInTheDocument();
+  });
+
   it('should be change label color when have error', () => {
     renderWithTheme(<Input title="Name" error="Name required" />);
     const text = screen.getByText('Name');
@@ -32,6 +41,19 @@ describe('<Input />', () => {
 
     expect(text).toHaveStyle({
       color: '#EB7573',
+    });
+  });
+
+  it('should be change helper color when have helper text', () => {
+    renderWithTheme(<Input title="Name" helper="Helper text" />);
+    const text = screen.getByText('Helper text');
+
+    const input = screen.getByRole('textbox', { name: 'Name' });
+
+    fireEvent.focus(input);
+
+    expect(text).toHaveStyle({
+      color: '#141414',
     });
   });
 
