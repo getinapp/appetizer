@@ -12,6 +12,11 @@ export default {
         type: 'text',
       },
     },
+    helper: {
+      control: {
+        type: 'text',
+      },
+    },
     error: {
       control: {
         type: 'text',
@@ -41,4 +46,16 @@ withError.args = {
   title: 'Full name',
   placeholder: 'Testing',
   error: 'Erro label',
+};
+
+export const withHelper: Story<InputProps> = (args) => (
+  <div style={{ marginTop: 20 }}>
+    <Input {...args} />
+  </div>
+);
+
+withHelper.args = {
+  title: 'Full name',
+  placeholder: 'Testing',
+  helper: 'This is a helper text',
 };
