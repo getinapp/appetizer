@@ -13,6 +13,7 @@ export const InputContainer = styled.div`
 
 export const Label = styled.label<{ active: boolean; error: boolean }>`
   position: absolute;
+  padding: 0 0.35rem;
 
   ${({ theme, error, active }) => css`
     color: ${error && active ? theme.colors.error : theme.colors.black};
@@ -67,5 +68,16 @@ export const Error = styled.p`
 
   ${({ theme }) => css`
     color: ${theme.colors.error};
+  `}
+`;
+
+export const Helper = styled.p<{ active: boolean }>`
+  font-weight: normal;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+
+  ${({ theme, active }) => css`
+    color: ${active ? theme.colors.black : theme.colors.buttonOutlineBorder};
   `}
 `;

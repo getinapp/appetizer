@@ -3,6 +3,7 @@ import * as S from './styles';
 
 export type InputProps = {
   error?: string;
+  helper?: string;
   active?: boolean;
 } & InputHTMLAttributes<HTMLInputElement>;
 
@@ -10,11 +11,12 @@ export const Input = ({
   name,
   title,
   error,
+  helper,
   onFocus,
   onBlur,
   ...props
 }: InputProps) => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(!!props.placeholder);
 
   const handleOnFocus = (e: React.FocusEvent<HTMLInputElement>) => {
     if (onFocus) onFocus(e);
@@ -23,7 +25,7 @@ export const Input = ({
 
   const handleOnBlur = (e: React.FocusEvent<HTMLInputElement>) => {
     if (onBlur) onBlur(e);
-    setActive(e.target?.value.length !== 0);
+    setActive(e.target?.value.length !== 0 || !!props.placeholder);
   };
 
   return (
@@ -43,6 +45,7 @@ export const Input = ({
         />
       </S.InputContainer>
       {error && <S.Error>{error}</S.Error>}
+      {helper && <S.Helper active={active}>{helper}</S.Helper>}
     </S.Container>
   );
 };
