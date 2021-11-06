@@ -5,3 +5,7 @@ export * from './components/Logo';
 export * from './components/Title';
 export * from './components/Paragraph';
 export * from './components/Small';
+
+// Provider
+
+export * from './components/AppetizerProvider';
