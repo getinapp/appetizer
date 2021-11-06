@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import GlobalStyle from 'styles/global';
-import theme from 'styles/themes/light';
+import GlobalStyle from '../../styles/global';
+import theme from '../../styles/themes/light';
 
 type AppetizerProviderProps = {
   children: React.ReactNode;
