@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/getinapp/appetizer#readme",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -d",
     "release": "auto shipit --no-changelog --base-branch=master --email=wendelfreitasbranco@gmail.com",
     "commit": "git-cz",
     "storybook": "start-storybook -s ./public -p 6006",
