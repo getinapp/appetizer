@@ -2,6 +2,7 @@ import React from 'react';
 import * as S from './styles';
 
 type ButtonSizesType = 'small' | 'regular' | 'large';
+
 type ButtonVariantsType =
   | 'primary'
   | 'secondary'
@@ -38,7 +39,7 @@ export type ButtonProps = {
    * Set the loading status of button
    */
   loading?: boolean;
-};
+} & Pick<React.ButtonHTMLAttributes<HTMLButtonElement>, 'className'>;
 
 /**
  * API documentation for the React Button component. Learn about the available props, and the CSS API.
@@ -46,10 +47,11 @@ export type ButtonProps = {
 export const Button = ({
   children,
   variant = 'primary',
-  size = 'regular',
   isFullWidth = false,
+  size = 'regular',
   disabled = false,
   onClick,
+  ...props
 }: ButtonProps) => {
   return (
     <S.Container
@@ -58,6 +60,7 @@ export const Button = ({
       isFullWidth={isFullWidth}
       disabled={disabled}
       onClick={onClick}
+      {...props}
     >
       <span>{children}</span>
     </S.Container>
