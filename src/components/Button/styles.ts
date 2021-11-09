@@ -3,6 +3,7 @@ import styled, {
   DefaultTheme,
   FlattenSimpleInterpolation,
 } from 'styled-components';
+import { lighten } from 'polished';
 
 import { ButtonProps } from '.';
 
@@ -42,6 +43,14 @@ const wrapperModifiers: WrapperModifiersType = {
     &:hover {
       background-color: ${theme.colors.error};
     }
+
+    &:disabled {
+      background-color: ${lighten('0.1', theme.colors.primary)};
+    }
+
+    svg {
+      color: ${theme.colors.white};
+    }
   `,
   secondary: (theme: DefaultTheme) => css`
     background: ${theme.colors.secondary};
@@ -49,20 +58,36 @@ const wrapperModifiers: WrapperModifiersType = {
     &:hover {
       background-color: ${theme.colors.secondaryLight};
     }
+
+    &:disabled {
+      background-color: ${lighten('0.1', theme.colors.secondary)};
+    }
+
+    svg {
+      color: ${theme.colors.white};
+    }
   `,
   white: (theme: DefaultTheme) => css`
     background: ${theme.colors.white};
     color: ${theme.colors.black};
+
+    svg {
+      color: ${theme.colors.primary};
+    }
   `,
   outline: (theme: DefaultTheme) => css`
     background: transparent;
     color: ${theme.colors.black};
-    border: 0.1rem solid #676666;
+    border: 0.1rem solid ${theme.colors.buttonOutlineBorder};
   `,
   'outline-white': (theme: DefaultTheme) => css`
     background: transparent;
     color: ${theme.colors.white};
     border: 0.1rem solid ${theme.colors.white};
+
+    svg {
+      color: ${theme.colors.white};
+    }
   `,
   /**
    * Button Variants
@@ -72,10 +97,9 @@ const wrapperModifiers: WrapperModifiersType = {
     css`
       width: 100%;
     `,
-  disabled: (theme: DefaultTheme) =>
+  disabled: () =>
     css`
       &:disabled {
-        background-color: ${theme.colors.disabled};
         cursor: not-allowed;
       }
     `,

@@ -58,7 +58,20 @@ describe('<Button />', () => {
     const button = screen.getByRole('button');
 
     expect(button).toHaveStyle({
-      backgroundColor: '#B9B8B8',
+      cursor: 'not-allowed',
+    });
+  });
+
+  it('should be render with loading', () => {
+    renderWithTheme(
+      <Button variant="white" size="large" loading>
+        Hello Appetizer
+      </Button>,
+    );
+    const button = screen.getByTestId('loading-indicator');
+
+    expect(button).toHaveStyle({
+      color: '#DD4F50',
     });
   });
 

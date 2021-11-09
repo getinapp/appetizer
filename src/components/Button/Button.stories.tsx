@@ -25,3 +25,10 @@ export const Default: Story<ButtonProps> = (args) => <Button {...args} />;
 Default.args = {
   children: 'Label',
 };
+
+export const Loading: Story<ButtonProps> = (args) => <Button {...args} />;
+
+Loading.args = {
+  children: 'Loading Indicator',
+  loading: true,
+};

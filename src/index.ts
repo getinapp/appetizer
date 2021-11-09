@@ -1,4 +1,5 @@
 // Components
+export * from './components/Loading';
 export * from './components/Input';
 export * from './components/Button';
 export * from './components/Logo';

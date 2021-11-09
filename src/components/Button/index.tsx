@@ -1,5 +1,10 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
+import Loading from '../Loading';
 import * as S from './styles';
+
+type ButtonDefaultHTMLTypes =
+  | Pick<ButtonHTMLAttributes<HTMLButtonElement>, 'className'>
+  | Pick<AnchorHTMLAttributes<HTMLAnchorElement>, 'target' | 'href'>;
 
 type ButtonSizesType = 'small' | 'regular' | 'large';
 
@@ -39,7 +44,11 @@ export type ButtonProps = {
    * Set the loading status of button
    */
   loading?: boolean;
-} & Pick<React.ButtonHTMLAttributes<HTMLButtonElement>, 'className'>;
+  /**
+   * Change component to another element type
+   */
+  as?: React.ElementType;
+} & ButtonDefaultHTMLTypes;
 
 /**
  * API documentation for the React Button component. Learn about the available props, and the CSS API.
@@ -50,6 +59,7 @@ export const Button = ({
   isFullWidth = false,
   size = 'regular',
   disabled = false,
+  loading = false,
   onClick,
   ...props
 }: ButtonProps) => {
@@ -58,11 +68,12 @@ export const Button = ({
       variant={variant}
       size={size}
       isFullWidth={isFullWidth}
-      disabled={disabled}
+      disabled={disabled || loading}
       onClick={onClick}
       {...props}
     >
-      <span>{children}</span>
+      {loading && <Loading />}
+      {!!children && <span>{children}</span>}
     </S.Container>
   );
 };
