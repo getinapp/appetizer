@@ -1,4 +1,6 @@
 // Components
+export * from './components/Select';
+
 export * from './components/Loading';
 export * from './components/Input';
 export * from './components/Button';
