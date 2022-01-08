@@ -37,6 +37,7 @@ export const Input = ({
         <S.Input
           {...props}
           title={title}
+          aria-label={title}
           onFocus={handleOnFocus}
           onBlur={handleOnBlur}
           active={active}
