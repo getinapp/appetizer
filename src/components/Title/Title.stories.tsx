@@ -6,9 +6,6 @@ export default {
   title: 'Typography/Title',
   component: Title,
   argTypes: {
-    icon: {
-      type: '',
-    },
     children: {
       type: 'string',
     },
