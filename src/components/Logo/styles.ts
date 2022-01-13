@@ -22,7 +22,7 @@ const wrapperModifiers = {
   `,
 };
 
-export const Wrapper = styled.div<LogoProps>`
+export const Wrapper = styled.div<Pick<LogoProps, 'size'>>`
   padding-top: 4px;
   ${({ size }) => css`
     ${!!size && wrapperModifiers[size]}
