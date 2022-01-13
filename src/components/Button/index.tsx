@@ -21,7 +21,7 @@ export type ButtonProps = {
    */
   children?: React.ReactElement | string;
   /**
-   * The variant of the button. It supports just two type of variants: 'primary' and 'secondary'.
+   * The variant of the button. It supports just five type of variants: 'primary', 'secondary', 'white', 'outline' and 'outline-white'.
    */
   variant?: ButtonVariantsType;
   /**
