@@ -119,7 +119,7 @@
     }
   },
   "dependencies": {
-    "react-icons": "^4.3.1",
+    "@styled-icons/fluentui-system-filled": "^10.35.0",
     "styled-components": "^5.3.3"
   }
 }
