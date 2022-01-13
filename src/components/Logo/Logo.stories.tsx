@@ -18,3 +18,10 @@ export const Default: Story = (args) => <Logo size="large" {...args} />;
 Default.args = {
   size: 'small',
 };
+
+export const White: Story = (args) => <Logo {...args} />;
+
+White.args = {
+  size: 'small',
+  color: 'white',
+};

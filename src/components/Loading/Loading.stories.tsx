@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Loading, { LoadingProps } from '.';
 
 export default {
-  title: 'Loading',
+  title: 'Components/Loading',
   component: Loading,
 } as Meta;
 
