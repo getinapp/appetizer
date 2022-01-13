@@ -12,7 +12,7 @@ export type LoadingProps = {
   color?: string;
 };
 
-const Loading = ({ size = 20, color }: LoadingProps) => (
+const Loading = ({ size = 25, color }: LoadingProps) => (
   <S.Loading size={size} color={color} data-testid="loading-indicator" />
 );
 
