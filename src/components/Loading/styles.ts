@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
-import { ImSpinner8 } from 'react-icons/im';
+import { SpinnerIos } from '@styled-icons/fluentui-system-filled/SpinnerIos';
 
 const rotate = keyframes`
   from{
@@ -10,7 +10,7 @@ const rotate = keyframes`
   }
 `;
 
-export const Loading = styled(ImSpinner8)`
+export const Loading = styled(SpinnerIos)`
   ${({ theme, color }) => css`
     color: ${color ? color : theme.colors.primary};
     margin-right: ${theme.spacings.xxsmall};
