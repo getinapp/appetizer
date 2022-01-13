@@ -1,12 +1,12 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
 
 import { Logo } from '.';
 
 describe('<Logo />', () => {
   it('should render the logo svg', () => {
-    render(<Logo />);
+    renderWithTheme(<Logo />);
     expect(screen.getByLabelText(/Get In/i).parentElement).toBeInTheDocument();
   });
 
@@ -32,5 +32,11 @@ describe('<Logo />', () => {
       height: '6rem',
       width: '15rem',
     });
+  });
+
+  it('should render the logo svg with color white', () => {
+    renderWithTheme(<Logo size="large" color="white" />);
+
+    expect(screen.getByLabelText(/Get In/i).parentElement).toBeInTheDocument();
   });
 });
