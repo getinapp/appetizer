@@ -4,3 +4,4 @@ dist
 .env.development
 coverage
 build-storybook.log
+storybook-static
