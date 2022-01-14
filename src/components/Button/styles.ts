@@ -17,8 +17,10 @@ const wrapperModifiers: WrapperModifiersType = {
    */
   small: (theme: DefaultTheme) => css`
     height: 2.8rem;
-    font-size: ${theme.font.sizes.small};
+    font-size: ${theme.font.sizes.xsmall};
     padding: 0.6rem 1rem;
+
+    border-radius: calc(${theme.border.radius.medium} + 0.2);
   `,
   regular: (theme: DefaultTheme) => css`
     height: 4rem;
@@ -112,8 +114,6 @@ export const Container = styled.button<ButtonProps>`
     justify-content: center;
     padding: 1rem 1.5rem;
     border: none;
-    line-height: 20px;
-    font-size: 1.5rem;
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
