@@ -32,7 +32,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    font-size: 65.5%;
+    font-size: 60%;
   }
 
   ::-webkit-scrollbar {
