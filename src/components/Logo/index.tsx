@@ -14,9 +14,8 @@ export type LogoProps = {
 };
 
 export const Logo = ({ color = 'black', size = 'normal' }: LogoProps) => {
-  const hex = color === 'black' ? '#20252A' : '#ffffff';
-
   const theme = useTheme();
+  const hex = color === 'black' ? '#20252A' : theme.colors.zeroContrast;
 
   return (
     <S.Wrapper size={size}>
@@ -24,7 +23,7 @@ export const Logo = ({ color = 'black', size = 'normal' }: LogoProps) => {
         width="120"
         aria-label="Get In"
         height="35"
-        viewBox="0 0 120 35"
+        viewBox="8 0 90 30"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
