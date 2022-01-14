@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { Close as CloseIcon } from '@styled-icons/ionicons-solid/Close';
 
 export const Modal = styled(ReactModal)<{ width?: string }>`
-  padding: 3.5rem 3rem;
+  padding: 3rem;
   position: absolute;
   left: 50%;
   top: 50%;
