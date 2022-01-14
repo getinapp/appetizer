@@ -52,6 +52,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.4.0",
     "@types/react": "^17.0.38",
+    "@types/react-modal": "^3.13.1",
     "@types/styled-components": "^5.1.19",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
@@ -120,6 +121,8 @@
   },
   "dependencies": {
     "@styled-icons/fluentui-system-filled": "^10.35.0",
+    "@styled-icons/ionicons-solid": "^10.34.0",
+    "react-modal": "^3.14.4",
     "styled-components": "^5.3.3"
   }
 }
