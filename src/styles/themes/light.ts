@@ -9,7 +9,7 @@ export default {
     secondaryLight: '#4476C8',
     secondary: '#3861BA',
     secondaryDark: '',
-    white: '#F7F5F5',
+    lowContrast: '#F7F5F5',
     zeroContrast: '#FFFFFF',
     black: '#141414',
     dark: '#20252A',
