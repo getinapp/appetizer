@@ -20,7 +20,7 @@
     "jsx": "react",
     "module": "ESNext",
     "declaration": true,
-    "declarationDir": "types",
+    "declarationDir": "dist",
     "sourceMap": true,
     "outDir": "dist",
     "moduleResolution": "node",
