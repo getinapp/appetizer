@@ -41,7 +41,7 @@ const wrapperModifiers: WrapperModifiersType = {
    */
   primary: (theme: DefaultTheme) => css`
     background: ${theme.colors.primary};
-    color: ${theme.colors.white};
+    color: ${theme.colors.lowContrast};
     &:hover {
       background-color: ${theme.colors.error};
     }
@@ -51,12 +51,12 @@ const wrapperModifiers: WrapperModifiersType = {
     }
 
     svg {
-      color: ${theme.colors.white};
+      color: ${theme.colors.lowContrast};
     }
   `,
   secondary: (theme: DefaultTheme) => css`
     background: ${theme.colors.secondary};
-    color: ${theme.colors.white};
+    color: ${theme.colors.lowContrast};
     &:hover {
       background-color: ${theme.colors.secondaryLight};
     }
@@ -66,11 +66,11 @@ const wrapperModifiers: WrapperModifiersType = {
     }
 
     svg {
-      color: ${theme.colors.white};
+      color: ${theme.colors.lowContrast};
     }
   `,
   white: (theme: DefaultTheme) => css`
-    background: ${theme.colors.white};
+    background: ${theme.colors.lowContrast};
     color: ${theme.colors.black};
 
     svg {
@@ -84,11 +84,11 @@ const wrapperModifiers: WrapperModifiersType = {
   `,
   'outline-white': (theme: DefaultTheme) => css`
     background: transparent;
-    color: ${theme.colors.white};
-    border: 0.1rem solid ${theme.colors.white};
+    color: ${theme.colors.lowContrast};
+    border: 0.1rem solid ${theme.colors.lowContrast};
 
     svg {
-      color: ${theme.colors.white};
+      color: ${theme.colors.lowContrast};
     }
   `,
   /**
