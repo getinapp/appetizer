@@ -3477,6 +3477,11 @@
   dependencies:
     source-map "^0.6.1"
 
+"@types/uniqid@^5.3.2":
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/@types/uniqid/-/uniqid-5.3.2.tgz#79c4b0eb6f6143de2f44441b0ce47f0f8c18c4ef"
+  integrity sha512-/NYoaZpWsnAJDsGYeMNDeG3p3fuUb4AiC7MfKxi5VSu18tXd08w6Ch0fKW94T4FeLXXZwZPoFgHA1O0rDYKyMQ==
+
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2", "@types/unist@^2.0.3":
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
@@ -8054,6 +8059,11 @@ ignore@^5.1.8, ignore@^5.2.0:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
 
+imask@^6.2.0:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/imask/-/imask-6.2.2.tgz#c72c0ce9a52f57539ecdc264eccc2407d20e13b5"
+  integrity sha512-oREITqngsjD0YxO62UpVQSxLNjIcb/mNO9hX2F8xQ282Kj3X9KXEAobipbUXz5R5NgtiL6nOPrWwo+AnLuz5AQ==
+
 immer@8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/immer/-/immer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
@@ -11417,6 +11427,14 @@ react-helmet-async@^1.0.7:
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
 
+react-imask@^6.0.7:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/react-imask/-/react-imask-6.2.2.tgz#1a6574828370158bfa7bf6bdf0db255206ef10c0"
+  integrity sha512-CKZhc3OrcMc+VjihSm4CLJlOXX1HIaVfTzLc498eN6RKveRUUqRAjqZWqLFoqg3D85p08WEl3NDLU7w5HdPcUw==
+  dependencies:
+    imask "^6.2.0"
+    prop-types "^15.7.2"
+
 react-inspector@^5.1.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-inspector/-/react-inspector-5.1.1.tgz#58476c78fde05d5055646ed8ec02030af42953c8"
@@ -13342,6 +13360,11 @@ union-value@^1.0.0:
     get-value "^2.0.6"
     is-extendable "^0.1.1"
     set-value "^2.0.1"
+
+uniqid@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/uniqid/-/uniqid-5.4.0.tgz#4e17bfcab66dfe33563411ae0c801f46ef964e66"
+  integrity sha512-38JRbJ4Fj94VmnC7G/J/5n5SC7Ab46OM5iNtSstB/ko3l1b5g7ALt4qzHFgGciFkyiRNtDXtLNb+VsxtMSE77A==
 
 unique-filename@^1.1.1:
   version "1.1.1"
