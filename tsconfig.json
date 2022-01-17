@@ -24,10 +24,10 @@
     "sourceMap": true,
     "outDir": "dist",
     "moduleResolution": "node",
-    "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
   },
+  "include": ["src"],
   "exclude": [
     "dist",
     "node_modules",
