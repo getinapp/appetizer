@@ -4,3 +4,5 @@ dist
 .env.development
 coverage
 build-storybook.log
+storybook-static
+yarn-error.log

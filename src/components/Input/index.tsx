@@ -1,21 +1,34 @@
 import React, { useState, InputHTMLAttributes } from 'react';
+import uniqid from 'uniqid';
+
 import * as S from './styles';
 
 export type InputProps = {
   error?: string;
   helper?: string;
-  active?: boolean;
+  label?: string;
+  mask?: unknown;
+  blocks?: unknown;
+  icon?: React.ReactNode;
+  iconPosition?: 'left' | 'right';
+  disabled?: boolean;
 } & InputHTMLAttributes<HTMLInputElement>;
 
 export const Input = ({
+  id,
   name,
-  title,
+  label,
+  icon,
+  iconPosition = 'left',
   error,
   helper,
   onFocus,
   onBlur,
+  required,
+  disabled,
   ...props
 }: InputProps) => {
+  const identifier = id || uniqid('appetizer-input__');
   const [active, setActive] = useState(!!props.placeholder);
 
   const handleOnFocus = (e: React.FocusEvent<HTMLInputElement>) => {
@@ -31,19 +44,38 @@ export const Input = ({
   return (
     <S.Container>
       <S.InputContainer>
-        <S.Label active={active} htmlFor={name} error={!!error}>
-          {title}
-        </S.Label>
-        <S.Input
-          {...props}
-          title={title}
-          aria-label={title}
-          onFocus={handleOnFocus}
-          onBlur={handleOnBlur}
+        {!!label && !disabled && (
+          <S.Label
+            active={active}
+            htmlFor={name}
+            error={!!error}
+            icon={!!icon}
+            iconPosition={iconPosition}
+            required={!!required}
+          >
+            {label}
+          </S.Label>
+        )}
+
+        <S.InputWrapper
+          icon={!!icon}
+          iconPosition={iconPosition}
+          error={!!error}
           active={active}
-          error={error}
-          name={name}
-        />
+          disabled={!!disabled}
+        >
+          {!!icon && <S.Icon iconPosition={iconPosition}>{icon}</S.Icon>}
+
+          <S.Input
+            id={identifier}
+            onFocus={handleOnFocus}
+            onBlur={handleOnBlur}
+            name={name}
+            title={label}
+            disabled={disabled}
+            {...props}
+          />
+        </S.InputWrapper>
       </S.InputContainer>
       {error && <S.Error>{error}</S.Error>}
       {helper && <S.Helper active={active}>{helper}</S.Helper>}

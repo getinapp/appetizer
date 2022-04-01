@@ -1,5 +1,6 @@
 // Components
 export * from './components/Select';
+export * from './components/Modal';
 
 export * from './components/Loading';
 export * from './components/Input';
