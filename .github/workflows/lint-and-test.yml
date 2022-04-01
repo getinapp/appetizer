@@ -28,7 +28,7 @@ jobs:
             yarn-deps-${{ hashFiles('yarn.lock') }}
       - name: Run lint
         run: |
-          yarn install --frozen-lockfile
+          yarn install
           yarn lint
       - name: Run tests
         run: |
