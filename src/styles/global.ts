@@ -38,6 +38,7 @@ const GlobalStyles = createGlobalStyle`
   ::-webkit-scrollbar {
     width: 0;
   }
+
   ::-webkit-scrollbar-track {
     background: transparent;
   }
@@ -55,9 +56,8 @@ const GlobalStyles = createGlobalStyle`
   `}
 
   .ReactModal__Overlay {
-      opacity: 0;
-      transition: opacity 500ms ease-in-out;
-    }
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
 
     .ReactModal__Overlay--after-open {
       opacity: 1;
@@ -76,8 +76,6 @@ const GlobalStyles = createGlobalStyle`
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
   }
-
-
 `;
 
 export default GlobalStyles;

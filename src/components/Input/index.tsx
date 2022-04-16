@@ -1,4 +1,4 @@
-import React, { useState, InputHTMLAttributes } from 'react';
+import React, { useState, InputHTMLAttributes, useEffect } from 'react';
 import uniqid from 'uniqid';
 
 import * as S from './styles';
@@ -30,6 +30,7 @@ export const Input = ({
 }: InputProps) => {
   const identifier = id || uniqid('appetizer-input__');
   const [active, setActive] = useState(!!props.placeholder);
+  const hasValue = !!props.value || !!props.defaultValue;
 
   const handleOnFocus = (e: React.FocusEvent<HTMLInputElement>) => {
     if (onFocus) onFocus(e);
@@ -40,6 +41,10 @@ export const Input = ({
     if (onBlur) onBlur(e);
     setActive(e.target?.value.length !== 0 || !!props.placeholder);
   };
+
+  useEffect(() => {
+    if (hasValue) setActive(true);
+  }, [hasValue]);
 
   return (
     <S.Container>
